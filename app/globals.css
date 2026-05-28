@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Fond principal ──────────────────────────────────────── */
+:root {
+  --bg: #06060A;
+}
+
+html {
+  background-color: var(--bg);
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--bg);
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Scrollbar discrète ──────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #06060A;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a1e0e;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3e2e14;
+}
+
+/* ── Sélection texte ─────────────────────────────────────── */
+::selection {
+  background: rgba(201, 169, 110, 0.2);
+  color: #F0EBE1;
+}
+
+/* ── Focus visible global ────────────────────────────────── */
+:focus-visible {
+  outline: 1px solid rgba(201, 169, 110, 0.5);
+  outline-offset: 2px;
+}

@@ -1,0 +1,20 @@
+# Dépendances
+node_modules/
+
+# Build
+.next/
+.vercel/
+.wrangler/
+out/
+
+# Variables d'environnement — NE JAMAIS COMMITER
+.env
+.env.local
+.env*.local
+
+# Clé de compte de service — DONNÉES SENSIBLES
+service-account.json
+
+# Divers
+.DS_Store
+*.tsbuildinfo
