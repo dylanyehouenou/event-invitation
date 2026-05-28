@@ -10,7 +10,7 @@ export const eventConfig = {
     "Une soirée surprise organisée en l'honneur d'Espérance et Loïssa. Gardez le secret — chaque détail a été pensé pour les surprendre.",
 
   // ── Date & lieu ──────────────────────────────────────────
-  date:     "Samedi 28 Juin 2026",
+  date:     "Samedi 1er Août 2026",
   time:     "À définir",
   location: "Les Salles, Vaulx-en-Velin",
 
