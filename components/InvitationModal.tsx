@@ -86,7 +86,7 @@ export function InvitationModal({ open, onClose }: InvitationModalProps) {
           exit="hidden"
           transition={{ duration: 0.3 }}
           className="fixed inset-0 z-50 flex items-center justify-center p-4"
-          style={{ backdropFilter: "blur(12px)", backgroundColor: "rgba(3,3,10,0.75)" }}
+          style={{ backdropFilter: "blur(12px)", backgroundColor: "rgba(0,0,0,0.85)" }}
           onClick={(e) => e.target === e.currentTarget && handleClose()}
         >
           <motion.div
@@ -95,25 +95,25 @@ export function InvitationModal({ open, onClose }: InvitationModalProps) {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="relative w-full max-w-md rounded-sm border border-[#C9A96E]/15 bg-[#09090F] shadow-2xl"
-            style={{ boxShadow: "0 0 80px rgba(201,169,110,0.06), 0 25px 60px rgba(0,0,0,0.7)" }}
+            className="relative w-full max-w-md rounded-sm border border-[#E01010]/20 bg-[#080808] shadow-2xl"
+            style={{ boxShadow: "0 0 80px rgba(224,16,16,0.08), 0 25px 60px rgba(0,0,0,0.8)" }}
           >
-            {/* Ligne dorée top */}
-            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#C9A96E]/50 to-transparent" />
+            {/* Ligne rouge top */}
+            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#E01010]/60 to-transparent" />
 
             {/* Header */}
-            <div className="flex items-start justify-between border-b border-[#C9A96E]/08 px-8 py-7">
+            <div className="flex items-start justify-between border-b border-[#E01010]/10 px-8 py-7">
               <div>
-                <p className="font-sans text-[10px] uppercase tracking-[0.25em] text-[#C9A96E]/70">
+                <p className="font-sans text-[10px] uppercase tracking-[0.25em] text-[#E01010]/70">
                   Accès exclusif
                 </p>
-                <h2 className="mt-1 font-serif text-2xl font-light tracking-wide text-[#F0EBE1]">
+                <h2 className="mt-1 font-serif text-2xl font-light tracking-wide text-[#F5F5F5]">
                   Demander une invitation
                 </h2>
               </div>
               <button
                 onClick={handleClose}
-                className="mt-1 rounded-sm p-1.5 text-[#605040] transition-colors hover:text-[#C9A96E]"
+                className="mt-1 rounded-sm p-1.5 text-[#555555] transition-colors hover:text-[#E01010]"
                 aria-label="Fermer"
               >
                 <X size={18} />
@@ -131,20 +131,20 @@ export function InvitationModal({ open, onClose }: InvitationModalProps) {
                     animate={{ opacity: 1, y: 0 }}
                     className="flex flex-col items-center gap-4 py-6 text-center"
                   >
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full border border-[#C9A96E]/25 bg-[#C9A96E]/08">
-                      <CheckCircle className="text-[#C9A96E]" size={32} />
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full border border-[#E01010]/30 bg-[#E01010]/08">
+                      <CheckCircle className="text-[#E01010]" size={32} />
                     </div>
                     <div>
-                      <p className="font-serif text-xl font-light text-[#F0EBE1]">
+                      <p className="font-serif text-xl font-light text-[#F5F5F5]">
                         Demande enregistrée
                       </p>
-                      <p className="mt-2 font-sans text-sm leading-relaxed text-[#8A7A6A]">
+                      <p className="mt-2 font-sans text-sm leading-relaxed text-[#888888]">
                         Votre demande a bien été reçue. Vous serez contacté(e) si votre invitation est confirmée.
                       </p>
                     </div>
                     <button
                       onClick={handleClose}
-                      className="mt-2 font-sans text-xs uppercase tracking-widest text-[#C9A96E]/60 transition-colors hover:text-[#C9A96E]"
+                      className="mt-2 font-sans text-xs uppercase tracking-widest text-[#E01010]/60 transition-colors hover:text-[#E01010]"
                     >
                       Fermer
                     </button>
@@ -210,19 +210,19 @@ export function InvitationModal({ open, onClose }: InvitationModalProps) {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="group relative mt-1 flex h-12 w-full items-center justify-center overflow-hidden border border-[#C9A96E]/35 bg-[#C9A96E]/06 font-sans text-xs font-medium uppercase tracking-[0.2em] text-[#C9A96E] transition-all duration-300 hover:border-[#C9A96E]/60 hover:bg-[#C9A96E]/12 disabled:cursor-not-allowed disabled:opacity-50"
+                      className="group relative mt-1 flex h-12 w-full items-center justify-center overflow-hidden border border-[#E01010]/40 bg-[#E01010]/06 font-sans text-xs font-medium uppercase tracking-[0.2em] text-[#E01010] transition-all duration-300 hover:border-[#E01010]/80 hover:bg-[#E01010]/12 disabled:cursor-not-allowed disabled:opacity-50"
                     >
                       {loading ? (
                         <Loader2 size={16} className="animate-spin" />
                       ) : (
                         <>
                           <span className="relative z-10">Envoyer ma demande</span>
-                          <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-[#C9A96E]/10 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+                          <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-[#E01010]/12 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
                         </>
                       )}
                     </button>
 
-                    <p className="text-center font-sans text-[11px] leading-relaxed text-[#4A3A2A]">
+                    <p className="text-center font-sans text-[11px] leading-relaxed text-[#444444]">
                       En soumettant ce formulaire, vous acceptez d'être contacté(e) dans le cadre de cet événement privé.
                     </p>
                   </motion.form>
@@ -230,8 +230,8 @@ export function InvitationModal({ open, onClose }: InvitationModalProps) {
               </AnimatePresence>
             </div>
 
-            {/* Ligne dorée bottom */}
-            <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#C9A96E]/20 to-transparent" />
+            {/* Ligne rouge bottom */}
+            <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#E01010]/25 to-transparent" />
           </motion.div>
         </motion.div>
       )}

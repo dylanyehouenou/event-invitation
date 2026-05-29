@@ -4,7 +4,7 @@
 
 /* ── Fond principal ──────────────────────────────────────── */
 :root {
-  --bg: #06060A;
+  --bg: #060606;
 }
 
 html {
@@ -24,24 +24,24 @@ body {
   width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: #06060A;
+  background: #060606;
 }
 ::-webkit-scrollbar-thumb {
-  background: #2a1e0e;
+  background: #3A0000;
   border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3e2e14;
+  background: #5A0000;
 }
 
 /* ── Sélection texte ─────────────────────────────────────── */
 ::selection {
-  background: rgba(201, 169, 110, 0.2);
-  color: #F0EBE1;
+  background: rgba(224, 16, 16, 0.25);
+  color: #F5F5F5;
 }
 
 /* ── Focus visible global ────────────────────────────────── */
 :focus-visible {
-  outline: 1px solid rgba(201, 169, 110, 0.5);
+  outline: 1px solid rgba(224, 16, 16, 0.5);
   outline-offset: 2px;
 }
